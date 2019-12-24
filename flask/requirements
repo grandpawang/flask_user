@@ -1,0 +1,7 @@
+gunicorn
+flask
+flask-script
+flask-jwt
+flask-migrate
+flask-sqlalchemy
+flask-cors

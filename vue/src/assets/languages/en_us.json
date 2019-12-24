@@ -1,0 +1,58 @@
+{
+    "common": {
+        "home": "Home",
+        "login": "Login",
+        "logout": "Logout",
+        "doc": "Document",
+        "blog": "Blog",
+        "projectRepo": "Project",
+        "myMsg": "My Message",
+        "config": "Config",
+        "backup": "Backup",
+        "restore": "Restore",
+        "backupRestore": "Backup Restore",
+        "versionName": "Version",
+        "exit": "Exit"
+    },
+    "action": {
+        "operation": "Operation",
+        "add": "Add",
+        "edit": "Edit",
+        "delete": "Delete",
+        "batchDelete": "Batch Delete",
+        "detail": "Detail",
+        "search": "Search",
+        "loading": "loading",
+        "submit": "Submit",
+        "comfirm": "Comfirm",
+        "cancel": "Cancel",
+        "reset": "Reset",
+        "refresh": "reflush",
+        "column": "show columns"
+    },
+    "sys": {
+        "sysMng": "System Manage",
+        "userMng": "User Manage",
+        "deptMng": "Dept Manage",
+        "roleMng": "Role Manage",
+        "menuMng": "Menu Manage",
+        "logMng": "Log Manage",
+        "sysMonitor": "System Monitor"
+    },
+    "select": {
+        "columns": "filter columns",
+        "key": "filter key word",
+        "action": "select"
+    },
+    "message": {
+        "tips": "tips",
+        "sure_delete": "Are you sure to delete the selected record?",
+        "sure_edit": "Are you sure to submit?",
+        "sucess_delete": "Delete successful",
+        "fail_delete": "Delete failed",
+        "sucess_edit": "Modified success",
+        "fail_edit": "Modification failed",
+        "change_success": "change success",
+        "change_fail": "change fail"
+    }
+}
