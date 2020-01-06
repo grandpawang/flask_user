@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import SuperTable from "@/components/table/SuperTable";
+import SuperTable from "@/components/table/SuperTable.vue";
 import randomColor from "@/utils/randomColor";
 
 export default {

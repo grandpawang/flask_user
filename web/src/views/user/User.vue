@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import SuperTable from "@/components/table/SuperTable";
+import SuperTable from "@/components/table/SuperTable.vue";
 import data2tree from "@/utils/data2tree";
 import parseData from "@/utils/parseData";
 import randomColor from "@/utils/randomColor";

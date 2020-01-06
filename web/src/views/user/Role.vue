@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import SuperTable from "@/components/table/SuperTable";
+import SuperTable from "@/components/table/SuperTable.vue";
 import randomColor from "@/utils/randomColor";
 import array2set from "@/utils/array2set";
 
