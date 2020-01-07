@@ -16,11 +16,11 @@ script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - cd web
   - ls
-  - sudo docker build -t user_web .
+  - sudo docker build -t grandpawang/user_web:laster .
+  - cd ..
+  - cd server
+  - sudo docker build -t grandpawang/user_server:laster .
   - cd ..
   - docker images
-  - cd server
-  - sudo docker build -t user_server .
-  - cd ..
   - docker push grandpawang/user_web:laster
   - docker push grandpawang/user_server:laster
