@@ -22,4 +22,5 @@ script:
   - cd server
   - sudo docker build -t user_server .
   - cd ..
-  - ls
+  - docker push grandpawang/user_web:laster
+  - docker push grandpawang/user_server:laster
