@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/grandpawang/flask_user.svg?branch=master)](https://travis-ci.org/grandpawang/flask_user.svg?branch=master)
+
 # flask_user
 flask sqlalchemy vue 
 
