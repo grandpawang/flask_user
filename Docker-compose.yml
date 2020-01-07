@@ -1,20 +1,20 @@
 version: "3"
 
 services:
-  # mysql:
-  #   image: mysql:5.7
-  #   container_name: user_mysql
-  #   environment:
-  #     MYSQL_ROOT_PASSWORD: "1234"
-  #     MYSQL_ROOT_HOST: "%"
-  #     MYSQL_USER: root
-  #     MYSQL_PASS: "1234"
-  #   ports:
-  #     - 3306:3306
-  #   # restart: always
-  #   volumes:
-  #     - /g/project/@2019-05-19userManage/flask_user/db/mysql/db:/var/lib/mysql
-  #     - /g/project/@2019-05-19userManage/flask_user/db/mysql/my.ini:/etc/my.cnf
+  mysql:
+    image: mysql:5.7
+    container_name: user_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "1234"
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_USER: root
+      MYSQL_PASS: "1234"
+    ports:
+      - 3306:3306
+    # restart: always
+    # volumes:
+    #   - /g/project/@2019-05-19userManage/flask_user/db/mysql/db:/var/lib/mysql
+    #   - /g/project/@2019-05-19userManage/flask_user/db/mysql/my.ini:/etc/my.cnf
 
   api:
     image: user_server:latest
@@ -25,15 +25,15 @@ services:
       - 8000:8000
     # restart: true
     volumes: 
-      - /g/project/@2019-05-19userManage/flask_user/server:/home/userManage
+      - /g/project/@2019-05-19userManage/flask_user/server:/home/dev
 
-  # web:
-  #   image: user_node
-  #   container_name: user_node
-  #   tty: true
-  #   stdin_open: true
-  #   ports:
-  #     - 8080:8080
-  #   # restart: always
-  #   volumes:
-  #     - /g/project/@2019-05-19userManage/flask_user/web:/home/userManage
+  web:
+    image: user_node
+    container_name: user_node
+    tty: true
+    stdin_open: true
+    ports:
+      - 8080:8080
+    # restart: always
+    volumes:
+      - /g/project/@2019-05-19userManage/flask_user/web:/home/dev

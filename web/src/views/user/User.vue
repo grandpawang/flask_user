@@ -8,7 +8,7 @@
       </el-breadcrumb>
     </div>
 
-    <super-table ref="table" permsEdit="user.alert" permsDelete="user.delete" permsAdd="user.create" :expand="true" :data="tableData" :dataFormRules="dataFormRules" @select="handleSelect" @edit="handleEdit" @delete="handleDelete" @search="handleSearch">
+    <edit-form-table ref="table" permsEdit="user.alert" permsDelete="user.delete" permsAdd="user.create" :expand="true" :data="tableData" :dataFormRules="dataFormRules" @select="handleSelect" @edit="handleEdit" @delete="handleDelete" @search="handleSearch">
       <div slot="edit_head_img" slot-scope="{data}">
         <header-upload :img.sync="head_img" />
       </div>
@@ -26,12 +26,12 @@
         <el-avatar size="small" icon="el-icon-user-solid" v-else></el-avatar>
       </div>
 
-    </super-table>
+    </edit-form-table>
   </div>
 </template>
 
 <script>
-import SuperTable from "@/components/table/SuperTable.vue";
+import editFormTable from "@/components/CustomTable/editFormTable";
 import data2tree from "@/utils/data2tree";
 import parseData from "@/utils/parseData";
 import randomColor from "@/utils/randomColor";
@@ -41,7 +41,7 @@ import headerUpload from '@/components/headerUpload/index.vue'
 
 export default {
   components: {
-    SuperTable,
+    editFormTable,
     headerUpload,
   },
   data() {

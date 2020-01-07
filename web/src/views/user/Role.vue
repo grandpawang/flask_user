@@ -12,24 +12,24 @@
       <el-tag :style="formatterPermissionStyle.group">机构权限</el-tag>
     </div>
 
-    <super-table permsEdit="role.alert" permsDelete="role.delete" permsAdd="role.create" :expand="false" :data="tableData" :dataFormRules="dataFormRules" @select="handleSelect" @edit="handleEdit" @delete="handleDelete" @search="handleSearch">
+    <edit-form-table permsEdit="role.alert" permsDelete="role.delete" permsAdd="role.create" :expand="false" :data="tableData" :dataFormRules="dataFormRules" @select="handleSelect" @edit="handleEdit" @delete="handleDelete" @search="handleSearch">
       <template v-slot:permissions="data">
         <div v-for="(permissions, index) in formatterData[data.data].permissions" :key="index" style="float:left;clear: both;">
           <el-tag :style="item.style" :key="index" v-for="(item, index) in permissions">{{item.comment}}</el-tag>
         </div>
       </template>
-    </super-table>
+    </edit-form-table>
   </div>
 </template>
 
 <script>
-import SuperTable from "@/components/table/SuperTable.vue";
+import editFormTable from "@/components/CustomTable/editFormTable";
 import randomColor from "@/utils/randomColor";
 import array2set from "@/utils/array2set";
 
 export default {
   components: {
-    SuperTable,
+    editFormTable,
 
   },
   data() {

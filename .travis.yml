@@ -1,0 +1,24 @@
+language: node_js
+sudo: required
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - node_modules
+
+services:
+  - docker
+
+script:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - set -x \
+    && cd web \
+    && sudo docker build -t user_web . \
+    && cd .. \
+    && cd server \
+    && sudo docker build -t user_server \
+    && cd .. \
+    && ls

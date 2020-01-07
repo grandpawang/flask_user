@@ -73,7 +73,7 @@ import FilterColumn from "@/components/FilterColumn/index.vue";
 import EditForm from "@/components/EditForm/index.vue";
 
 export default {
-  name: "superTable",
+  name: "editFormTable",
   components: {
     SuperButton,
     SelectBar,

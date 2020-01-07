@@ -8,7 +8,7 @@
       </el-breadcrumb>
     </div>
 
-    <super-table
+    <edit-form-table
       permsEdit="group.alert"
       permsDelete="group.delete"
       permsAdd="group.create"
@@ -40,17 +40,17 @@
           >{{item.comment}}</el-tag>
         </div>
       </template>
-    </super-table>
+    </edit-form-table>
   </div>
 </template>
 
 <script>
-import SuperTable from "@/components/table/SuperTable.vue";
+import editFormTable from "@/components/CustomTable/editFormTable";
 import randomColor from "@/utils/randomColor";
 
 export default {
   components: {
-    SuperTable,
+    editFormTable,
   },
   data() {
     return {
