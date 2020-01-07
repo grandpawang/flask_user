@@ -14,11 +14,11 @@ services:
 
 script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - set -x \
-    && cd web \
-    && sudo docker build -t user_web . \
-    && cd .. \
-    && cd server \
-    && sudo docker build -t user_server \
-    && cd .. \
-    && ls
+  - cd web
+  - ls
+  - sudo docker build -t user_web .
+  - cd ..
+  - cd server
+  - sudo docker build -t user_server
+  - cd ..
+  - ls
