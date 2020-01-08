@@ -110,3 +110,7 @@ function filterAsyncRouter(asyncRouterMap, permissions) {
 ## bug
 
 # 第一次访问没有生成路由 第一个next()会到404
+
+## help
+
+* [webpack升级到4.x](https://gitee.com/xuliangzhan_admin/vue-webpack4-template/tree/master)
