@@ -11,6 +11,7 @@ function resolve(dir) {
 
 
 module.exports = {
+  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   context: path.resolve(__dirname, '../'),
   entry: {
     app: './src/main.js'
@@ -65,10 +66,10 @@ module.exports = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       }, 
-      {
-        test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
-      }
+      // {
+      //   test: /\.scss$/,
+      //   loaders: ['style', 'css', 'sass']
+      // }
     ]
   },
   node: {
